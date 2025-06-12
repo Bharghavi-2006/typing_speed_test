@@ -426,8 +426,8 @@
             const accuracy = totalTypedChars > 0 ? Math.round((correctTypedChars / totalTypedChars) * 100) : 0;
 
             let category = 'Snail 🐌';
-            if (wpm > 45) category = 'T-Rex 🦖';
-            else if (wpm > 40) category = 'Octopus 🐙';
+            if (wpm > 40) category = 'T-Rex 🦖';
+            else if (wpm > 30) category = 'Octopus 🐙';
 
             return { wpm, cpm, accuracy, category };
         }
